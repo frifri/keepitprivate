@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "KeepItPrivate"
+version = "0.1.0"
+description = "A small tool to keep your private files in the cloud and potentially share them"
+authors = ["Francis Genet"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+ipdb = "^0.11.0"
+pytest = "^4.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

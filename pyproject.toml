@@ -6,10 +6,12 @@ authors = ["Francis Genet"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
+boto3 = "^1.9"
 
 [tool.poetry.dev-dependencies]
 ipdb = "^0.11.0"
 pytest = "^4.3"
+awscli = "^1.16"
 
 [build-system]
 requires = ["poetry>=0.12"]

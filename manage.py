@@ -2,8 +2,19 @@
 import os
 import sys
 
+from keepitprivate.constants import DEV, PROD
+
+
 if __name__ == '__main__':
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'keepitprivate.settings')
+    environment = os.environ.get('KIP_ENV', DEV)
+
+    if environment == PROD:
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE',
+                              'keepitprivate.settings.settings')
+    else:
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE',
+                              'keepitprivate.settings.settings_dev')
+
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

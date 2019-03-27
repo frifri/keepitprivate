@@ -7,6 +7,7 @@ authors = ["Francis Genet"]
 [tool.poetry.dependencies]
 python = "^3.7"
 boto3 = "^1.9"
+django = "^2.1"
 
 [tool.poetry.dev-dependencies]
 ipdb = "^0.11.0"

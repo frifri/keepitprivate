@@ -2,8 +2,6 @@
 
 from keepitprivate.settings.settings import *  # noqa
 
+INSTALLED_APPS += ['django_extensions']  # noqa
 
-INSTALLED_APPS += [
-    'django_extensions',
-]
-
+DEFAULT_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'

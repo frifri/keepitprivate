@@ -4,7 +4,6 @@ import sys
 
 from keepitprivate.constants import DEV, PROD
 
-
 if __name__ == '__main__':
     environment = os.environ.get('KIP_ENV', DEV)
 

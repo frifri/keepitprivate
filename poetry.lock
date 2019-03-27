@@ -24,16 +24,16 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "19.1.0"
 
 [[package]]
-category = "dev"
+category = "main"
 description = "Universal Command Line Environment for AWS."
 name = "awscli"
 optional = false
 python-versions = "*"
-version = "1.16.125"
+version = "1.16.132"
 
 [package.dependencies]
 PyYAML = ">=3.10,<=3.13"
-botocore = "1.12.115"
+botocore = "1.12.122"
 colorama = ">=0.2.5,<=0.3.9"
 docutils = ">=0.10"
 rsa = ">=3.1.2,<=3.5.0"
@@ -54,10 +54,10 @@ description = "The AWS SDK for Python"
 name = "boto3"
 optional = false
 python-versions = "*"
-version = "1.9.115"
+version = "1.9.122"
 
 [package.dependencies]
-botocore = ">=1.12.115,<1.13.0"
+botocore = ">=1.12.122,<1.13.0"
 jmespath = ">=0.7.1,<1.0.0"
 s3transfer = ">=0.2.0,<0.3.0"
 
@@ -67,7 +67,7 @@ description = "Low-level, data-driven core of boto 3."
 name = "botocore"
 optional = false
 python-versions = "*"
-version = "1.12.115"
+version = "1.12.122"
 
 [package.dependencies]
 docutils = ">=0.10"
@@ -82,7 +82,7 @@ python = ">=3.4"
 version = ">=1.20,<1.25"
 
 [[package]]
-category = "dev"
+category = "main"
 description = "Cross-platform colored terminal text."
 name = "colorama"
 optional = false
@@ -110,7 +110,7 @@ version = "2.1.7"
 pytz = "*"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Extensions for Django"
 name = "django-extensions"
 optional = false
@@ -150,7 +150,7 @@ marker = "python_version >= \"3.3\""
 name = "ipython"
 optional = false
 python-versions = ">=3.5"
-version = "7.3.0"
+version = "7.4.0"
 
 [package.dependencies]
 appnope = "*"
@@ -272,7 +272,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "1.8.0"
 
 [[package]]
-category = "dev"
+category = "main"
 description = "ASN.1 types and codecs"
 name = "pyasn1"
 optional = false
@@ -330,7 +330,7 @@ python-versions = "*"
 version = "2018.9"
 
 [[package]]
-category = "dev"
+category = "main"
 description = "YAML parser and emitter for Python"
 name = "pyyaml"
 optional = false
@@ -338,7 +338,7 @@ python-versions = "*"
 version = "3.13"
 
 [[package]]
-category = "dev"
+category = "main"
 description = "Pure-Python RSA implementation"
 name = "rsa"
 optional = false
@@ -400,24 +400,24 @@ python-versions = "*"
 version = "0.1.7"
 
 [metadata]
-content-hash = "2dc57c2431c8827e65760de2a41841df21804647613a771aee87be38f5df26d0"
+content-hash = "1bfc61325b52d3aef5f336a4f877be98a730551c6f3159112b3cda545db61810"
 python-versions = "^3.7"
 
 [metadata.hashes]
 appnope = ["5b26757dc6f79a3b7dc9fab95359328d5747fcb2409d331ea66d0272b90ab2a0", "8b995ffe925347a2138d7ac0fe77155e4311a0ea6d6da4f5128fe4b3cbe5ed71"]
 atomicwrites = ["03472c30eb2c5d1ba9227e4c2ca66ab8287fbfbbda3888aa93dc2e28fc6811b4", "75a9445bac02d8d058d5e1fe689654ba5a6556a1dfd8ce6ec55a0ed79866cfa6"]
 attrs = ["69c0dbf2ed392de1cb5ec704444b08a5ef81680a61cb899dc08127123af36a79", "f0b870f674851ecbfbbbd364d6b5cbdff9dcedbc7f3f5e18a6891057f21fe399"]
-awscli = ["8abac6653219e64d008f8c5da9401a7ecac6e641978c55bc0a1c4864ec2df6ce", "a56f53f9bfa3ddc172d03ae53ea7d05afef2aea0cb8962e122450a76fcb0f794"]
+awscli = ["45146eb6fcd6f099e34db4dab65cecbe3c24852daaca6caa680b8d1fbea2c200", "fc3f1b882742cf36de03eb9c7fc5c06a4a126b827f894ccf19165bd5d6ff2e66"]
 backcall = ["38ecd85be2c1e78f77fd91700c76e14667dc21e2713b63876c0eb901196e01e4", "bbbf4b1e5cd2bdb08f915895b51081c041bac22394fdfcfdfbe9f14b77c08bf2"]
-boto3 = ["1b4a86e1167ba7cbb9dbf2a0a0b86447b35a2b901ae5aace75b8196631680957", "f5b12367c530dac45782251b672f1e911da5c74285f89850b0f4f5694b8c388c"]
-botocore = ["7c8ec120bc5bcc4076aebd7dac3a679777ff3a3ce3263c64d7342ea7982b578c", "f4607f8800f87fd8eacd450699666f92d7fbc48fbb757903ad56825ce08e072a"]
+boto3 = ["9e5ad47cb55768e23dbe3c56f83c4a31a937d5f9f130d8291d9e219e718dedb7", "fff5ec5c97ed26fec46ebe01a8454630150f2f25b0669f23aba365fba33438b1"]
+botocore = ["aeed0874594c143867ec10f2be9b2b9f523f2e0768eaf3f627924d36c7b2e7c1", "c33273422c24a072562caeccac2ce1e0ba96dafb2b9bd9e61dbe9eb329ceb1cf"]
 colorama = ["463f8483208e921368c9f306094eb6f725c6ca42b0f97e313cb5d5512459feda", "48eb22f4f8461b1df5734a074b57042430fb06e1d61bd1e11b078c0fe6d7a1f1"]
 decorator = ["86156361c50488b84a3f148056ea716ca587df2f0de1d34750d35c21312725de", "f069f3a01830ca754ba5258fde2278454a0b5b79e0d7f5c13b3b97e57d4acff6"]
 django = ["275bec66fd2588dd517ada59b8bfb23d4a9abc5a362349139ddda3c7ff6f5ade", "939652e9d34d7d53d74d5d8ef82a19e5f8bb2de75618f7e5360691b6e9667963"]
 django-extensions = ["109004f80b6f45ad1f56addaa59debca91d94aa0dc1cb19678b9364b4fe9b6f4", "307766e5e6c1caffe76c5d99239d8115d14ae3f7cab2cd991fcffd763dad904b"]
 docutils = ["02aec4bd92ab067f6ff27a38a38a41173bf01bed8f89157768c1573f53e474a6", "51e64ef2ebfb29cae1faa133b3710143496eca21c530f3f71424d77687764274", "7a4bd47eaf6596e1295ecb11361139febe29b084a87bf005bf899f9a42edc3c6"]
 ipdb = ["7081c65ed7bfe7737f83fa4213ca8afd9617b42ff6b3f1daf9a3419839a2a00a"]
-ipython = ["06de667a9e406924f97781bda22d5d76bfb39762b678762d86a466e63f65dc39", "5d3e020a6b5f29df037555e5c45ab1088d6a7cf3bd84f47e0ba501eeb0c3ec82"]
+ipython = ["b038baa489c38f6d853a3cfc4c635b0cda66f2864d136fe8f40c1a6e334e2a6b", "f5102c1cd67e399ec8ea66bcebe6e3968ea25a8977e53f012963e5affeb1fe38"]
 ipython-genutils = ["72dd37233799e619666c9f639a9da83c34013a73e8bbc79a7a6348d93c61fab8", "eb2e116e75ecef9d4d228fdc66af54269afa26ab4463042e33785b887c628ba8"]
 jedi = ["2bb0603e3506f708e792c7f4ad8fc2a7a9d9c2d292a358fbbd58da531695595b", "2c6bcd9545c7d6440951b12b44d373479bf18123a401a52025cf98563fbd826c"]
 jmespath = ["3720a4b1bd659dd2eecad0666459b9788813e032b83e7ba58578e48254e0a0e6", "bde2aef6f44302dfb30320115b17d030798de8c4110e28d5cf6cf91a7a31074c"]

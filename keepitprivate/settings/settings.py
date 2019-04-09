@@ -9,7 +9,6 @@ from keepitprivate.constants import DEV
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -28,13 +27,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+
+    'keepitprivate.core',
 ]
 
 MIDDLEWARE = [
@@ -105,11 +105,16 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
-USE_I18N = True
+USE_I18N = False
 
-USE_L10N = True
+USE_L10N = False
 
 USE_TZ = True
+
+
+# User settings
+
+AUTH_USER_MODEL = 'core.Account'
 
 
 # Static files (CSS, JavaScript, Images)
@@ -118,10 +123,16 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Medias
-
 MEDIA_ROOT = 'media/'
 
 MEDIA_URL = 'media/'
 
 # We will be using S3 as our storage in a prod environment
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+# ## DRF Settings
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}

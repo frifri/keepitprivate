@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'keepitprivate.core',
+    'keepitprivate.file_system',
 ]
 
 MIDDLEWARE = [
